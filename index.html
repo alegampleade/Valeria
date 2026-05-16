@@ -203,8 +203,9 @@ button{
     transform:scale(1.2);
 
     filter:blur(20px);
-}
 
+    pointer-events:none;
+}
 /* ========================= */
 /* NUEVA PANTALLA */
 /* ========================= */
@@ -465,39 +466,45 @@ O sea…<br><br>
 
     <div class="final-content">
 
-        <h2>❤️ Ahora sí puedo ponerle un nombre a esto ❤️</h2>
+<h2>💖 Y al final… eras vos 💖</h2>
 
 <p>
 
-Y sinceramente…
-creo que fue de las mejores cosas que me pudieron pasar 💖
+No sé cómo explicarlo exactamente,
+pero desde hace tiempo sentía que algo en mí cambiaba cada vez que hablaba con vos.
 
 <br><br>
 
-Prometo que jamás te vas a arrepentir de esto.
+Me fui acostumbrando a tu forma de ser,
+a tu cariño,
+a tu presencia,
+hasta que sin darme cuenta,
+empecé a imaginarte en todos mis días ❤️
 
 <br><br>
 
-Porque desde hoy,
-quiero ser ese lugar donde siempre te sientas querida,
-escuchada,
-cuidada
-y feliz.
+Y hoy,
+después de todo lo que construimos,
+solo puedo decir que estoy feliz de haberte encontrado.
 
 <br><br>
 
-Quiero hacerte sonreír incluso en tus días difíciles,
-acompañarte en cada momento
-y demostrarte todos los días
-lo importante que sos para mí.
+Porque no sos solamente alguien que quiero…
+sos alguien con quien realmente quiero quedarme ✨
 
 <br><br>
 
-Esto recién empieza…
-y no podría estar más feliz de que seas vos ✨
+Prometo seguir cuidando esto tan bonito que tenemos,
+hacerte sentir especial,
+acompañarte siempre
+y demostrarte cada día lo importante que sos para mí.
+
+<br><br>
+
+Y ahora sí…
+nuestra relación tiene un nombre 💕
 
 </p>
-
     </div>
 
 </div>
@@ -587,13 +594,21 @@ yesBtn.addEventListener("click",()=>{
 
     /* esperar transición */
 
-    setTimeout(()=>{
+   setTimeout(()=>{
 
-        finalScreen.classList.add("show");
+    /* ocultar completamente la carta */
 
-        startHeartRain();
+    card.style.display = "none";
 
-    },1500);
+    /* mostrar pantalla final */
+
+    finalScreen.classList.add("show");
+
+    /* lluvia de corazones */
+
+    startHeartRain();
+
+},1500);
 
 });
 
