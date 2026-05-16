@@ -15,13 +15,17 @@
 }
 
 html,body{
+
     width:100%;
     min-height:100%;
+
     overflow-x:hidden;
     overflow-y:auto;
-    font-family:'Georgia', serif;
-}
 
+    font-family:'Georgia', serif;
+
+    scroll-behavior:smooth;
+}
 /* ========================= */
 /* PANTALLA INICIAL */
 /* ========================= */
@@ -29,9 +33,10 @@ html,body{
 body{
 
     display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:50px 20px;
+justify-content:center;
+align-items:flex-start;
+
+padding:50px 20px;
 
     background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
@@ -222,10 +227,15 @@ button{
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
 
     flex-direction:column;
+
+    padding:80px 20px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
 
     opacity:0;
 
@@ -242,7 +252,6 @@ button{
 
     z-index:5;
 }
-
 .final-screen.show{
 
     opacity:1;
@@ -594,7 +603,7 @@ yesBtn.addEventListener("click",()=>{
 
     /* esperar transición */
 
-   setTimeout(()=>{
+setTimeout(()=>{
 
     /* ocultar completamente la carta */
 
@@ -609,7 +618,6 @@ yesBtn.addEventListener("click",()=>{
     startHeartRain();
 
 },1500);
-
 });
 
 /* ========================= */
